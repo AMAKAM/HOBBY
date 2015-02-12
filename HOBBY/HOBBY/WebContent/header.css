@@ -1,0 +1,53 @@
+@CHARSET "ISO-8859-1";
+
+html, body 
+		{	
+			background-image: url(images/691px-Ultraviolet_image_of_the_Cygnus_Loop_Nebula_crop.jpg);
+ 		
+    	}
+    	
+    	
+#class1
+		{
+			position:relative;
+			margin:2%;
+		    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+			filter: alpha(opacity=30);
+			opacity: 0.3;
+		    background-color: #fff;
+		    border-radius:3px;
+		    z-index:1;  
+			width:500px;
+			height:50px;
+		}
+		
+#class2
+		{
+	    
+	      position:absolute;
+		  width: 300px;
+		  height:30px;
+		  z-index:2;
+		    
+		  font:bold 24px/30px Arial, Sans-serif;
+	      padding:0;
+	      margin:0;
+	      color:black;
+	      text-align: center;
+		
+		}
+
+#class2
+		{
+	    
+	      position:absolute;
+		  width: 300px;
+		  height:30px;
+		  z-index:2;
+		    
+		  font:bold 24px/30px Arial, Sans-serif;
+	      color:black;
+	      text-align: center;
+		
+		}
+

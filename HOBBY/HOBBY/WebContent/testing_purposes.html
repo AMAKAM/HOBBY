@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type ="text/javascript">
+function x()
+{
+dat = document.getElementById('date');	
+newx = document.getElementById('select');
+document.getElementById('name_label').innerHTML=newx.value;
+for(var i=1;i<=newx.value;i++)
+{
+ opt = document.createElement('option');
+ opt.value=i;
+ opt.innerHTML=i;
+ dat.appendChild(opt);
+}
+}
+function stupid()
+{
+	
+	dat = document.getElementById('date');	
+	var x = dat.value; 
+	document.getElementById('label').innerHTML=dat.value;
+	if(!x)
+		alert('YES');
+}
+</script>
+
+</head>
+<body>
+<form action="cool" method="post">
+	<select name="select" id='select' onchange="x()" onblur="x()">
+	<script type ="text/javascript" >	
+	for(var i=0;i<10;i++)
+		document.write("<option value=\""+i+"\">"+i+"<\option>");	
+	</script>
+	</select>
+<label id="name_label"></label>	
+
+<input type="submit" value="submit" onclick="">	
+</form>
+<br>
+<form>
+	<select id ="date">
+	</select>
+<label id="label"></label>	
+<input type="submit" value="submit" onclick="stupid()" />	
+</form>
+</body>
+</html>
